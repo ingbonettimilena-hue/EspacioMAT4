@@ -1,0 +1,194 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Espacio MAT - Mandala-inspired palette: Purple, Orange, Green */
+  --background: oklch(0.98 0.005 300); /* Soft lavender-white */
+  --foreground: oklch(0.25 0.08 300); /* Deep purple-black */
+  --card: oklch(0.99 0.003 300); /* Near white with purple hint */
+  --card-foreground: oklch(0.25 0.08 300);
+  --popover: oklch(0.99 0.003 300);
+  --popover-foreground: oklch(0.25 0.08 300);
+  --primary: oklch(0.35 0.18 300); /* Deep purple (mandala center) */
+  --primary-foreground: oklch(0.98 0.005 85);
+  --secondary: oklch(0.94 0.02 300); /* Light lavender */
+  --secondary-foreground: oklch(0.25 0.08 300);
+  --muted: oklch(0.94 0.015 300);
+  --muted-foreground: oklch(0.45 0.06 300);
+  --accent: oklch(0.72 0.18 75); /* Vibrant orange-gold (mandala ring) */
+  --accent-foreground: oklch(0.20 0.05 50);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.90 0.02 300);
+  --input: oklch(0.96 0.01 300);
+  --ring: oklch(0.35 0.18 300);
+  --chart-1: oklch(0.35 0.18 300); /* Deep purple */
+  --chart-2: oklch(0.72 0.18 75); /* Orange-gold */
+  --chart-3: oklch(0.55 0.15 145); /* Forest green */
+  --chart-4: oklch(0.60 0.20 330); /* Magenta */
+  --chart-5: oklch(0.75 0.15 85); /* Golden yellow */
+  --radius: 0.5rem;
+  --sidebar: oklch(0.97 0.01 300);
+  --sidebar-foreground: oklch(0.25 0.08 300);
+  --sidebar-primary: oklch(0.35 0.18 300);
+  --sidebar-primary-foreground: oklch(0.98 0.005 85);
+  --sidebar-accent: oklch(0.94 0.02 300);
+  --sidebar-accent-foreground: oklch(0.25 0.08 300);
+  --sidebar-border: oklch(0.90 0.02 300);
+  --sidebar-ring: oklch(0.35 0.18 300);
+  
+  /* Custom Espacio MAT colors */
+  --mat-purple: oklch(0.35 0.18 300);
+  --mat-orange: oklch(0.72 0.18 75);
+  --mat-green: oklch(0.55 0.15 145);
+  --mat-magenta: oklch(0.55 0.20 330);
+  --mat-gold: oklch(0.78 0.15 85);
+}
+
+.dark {
+  --background: oklch(0.18 0.04 300);
+  --foreground: oklch(0.95 0.01 300);
+  --card: oklch(0.22 0.04 300);
+  --card-foreground: oklch(0.95 0.01 300);
+  --popover: oklch(0.22 0.04 300);
+  --popover-foreground: oklch(0.95 0.01 300);
+  --primary: oklch(0.60 0.18 300);
+  --primary-foreground: oklch(0.15 0.04 300);
+  --secondary: oklch(0.28 0.04 300);
+  --secondary-foreground: oklch(0.95 0.01 300);
+  --muted: oklch(0.28 0.04 300);
+  --muted-foreground: oklch(0.70 0.03 300);
+  --accent: oklch(0.72 0.18 75);
+  --accent-foreground: oklch(0.15 0.04 50);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.32 0.04 300);
+  --input: oklch(0.28 0.04 300);
+  --ring: oklch(0.60 0.18 300);
+  --chart-1: oklch(0.60 0.18 300);
+  --chart-2: oklch(0.72 0.18 75);
+  --chart-3: oklch(0.60 0.15 145);
+  --chart-4: oklch(0.65 0.20 330);
+  --chart-5: oklch(0.78 0.15 85);
+  --sidebar: oklch(0.20 0.04 300);
+  --sidebar-foreground: oklch(0.95 0.01 300);
+  --sidebar-primary: oklch(0.60 0.18 300);
+  --sidebar-primary-foreground: oklch(0.15 0.04 300);
+  --sidebar-accent: oklch(0.28 0.04 300);
+  --sidebar-accent-foreground: oklch(0.95 0.01 300);
+  --sidebar-border: oklch(0.32 0.04 300);
+  --sidebar-ring: oklch(0.60 0.18 300);
+}
+
+@theme inline {
+  --font-sans: var(--font-sans), 'Lora', Georgia, serif;
+  --font-serif: var(--font-serif), 'Playfair Display', Georgia, serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom MAT colors for Tailwind */
+  --color-mat-purple: var(--mat-purple);
+  --color-mat-orange: var(--mat-orange);
+  --color-mat-green: var(--mat-green);
+  --color-mat-magenta: var(--mat-magenta);
+  --color-mat-gold: var(--mat-gold);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    cursor: none !important;
+  }
+  body {
+    @apply bg-background text-foreground;
+    cursor: none !important;
+  }
+  
+  /* Custom circular cursor */
+  body::before {
+    content: '';
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    border: 2px solid oklch(0.60 0.18 300); /* Purple/Lila color */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease, border-width 0.2s ease;
+    mix-blend-mode: difference;
+  }
+  
+  /* Larger cursor on hover over interactive elements */
+  a:hover ~ body::before,
+  button:hover ~ body::before,
+  [role="button"]:hover ~ body::before {
+    width: 40px;
+    height: 40px;
+    border-width: 3px;
+  }
+}
+
+/* Custom cursor follower using CSS variables */
+:root {
+  --cursor-x: 0px;
+  --cursor-y: 0px;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  border: 2px solid oklch(0.60 0.18 300);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  left: var(--cursor-x);
+  top: var(--cursor-y);
+  transform: translate(-50%, -50%);
+  transition: width 0.15s ease, height 0.15s ease, border-width 0.15s ease;
+  background: transparent;
+}
+
+.custom-cursor.hover {
+  width: 40px;
+  height: 40px;
+  border-width: 3px;
+}
