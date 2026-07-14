@@ -6,7 +6,7 @@ import { Proceso } from "@/components/espacio-mat/proceso";
 import { Servicios } from "@/components/espacio-mat/servicios";
 import { ClasesSemanales } from "@/components/espacio-mat/clases-semanales";
 import { CursosTalleres } from "@/components/espacio-mat/cursos-talleres";
-// import { Galeria } from "@/components/espacio-mat/galeria";
+import { Galeria } from "@/components/espacio-mat/galeria";
 // import { ConoceEspacio } from "@/components/espacio-mat/conoce-espacio";
 import { Contacto } from "@/components/espacio-mat/contacto";
 import { Footer } from "@/components/espacio-mat/footer";
@@ -22,7 +22,7 @@ export default function HomePage() {
       <Servicios />
       <ClasesSemanales />
       <CursosTalleres />
-      {/* <Galeria /> */}
+      <Galeria />
       {/* <ConoceEspacio /> */}
       <Contacto />
       <Footer />

@@ -1,31 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Sparkles, Heart, Users, Home } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import Image from "next/image";
-
-const caracteristicas = [
-  {
-    icon: Home,
-    titulo: "Ambiente Acogedor",
-    descripcion: "Un espacio diseñado para tu comodidad y bienestar",
-  },
-  {
-    icon: Heart,
-    titulo: "Energía Positiva",
-    descripcion: "Cada rincón está pensado para transmitir paz y armonía",
-  },
-  {
-    icon: Users,
-    titulo: "Comunidad",
-    descripcion: "Un lugar de encuentro para compartir y crecer juntos",
-  },
-  {
-    icon: Sparkles,
-    titulo: "Inspiración",
-    descripcion: "Espacios que invitan a la reflexión y el autoconocimiento",
-  },
-];
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -34,19 +11,21 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 overflow-hidden">
-      {/* Background Image */}
+      {/* Fondo fijo Espacio5 con filtro verde seco */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/ingreso.jpg"
-          alt="Espacio MAT - Entrada"
+          src="/Espacio5.jpeg"
+          alt="Espacio MAT - Fondo"
           fill
-          className="object-cover opacity-80"
+          className="object-cover"
           priority
           sizes="100vw"
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: "cover" }}
         />
+        {/* Filtro verde seco */}
+        <div className="absolute inset-0" style={{ backgroundColor: "#5a6b4a", opacity: 0.35, mixBlendMode: "multiply" }} />
         {/* Overlay gradient for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background/50" />
       </div>
 
       {/* Decorative organic shapes with mandala colors */}

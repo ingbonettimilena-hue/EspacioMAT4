@@ -178,5 +178,5 @@ Este proyecto también está vinculado a un proyecto de v0:
 Proyecto privado — © Espacio MAT. Todos los derechos reservados.
 [Para ejecutar
 entrar a la carpeta c:\proyectos vibolab\espaciomat4]
-ejecutar npm reun dev
+ejecutar npm run dev
 

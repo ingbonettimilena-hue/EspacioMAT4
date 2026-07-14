@@ -5,13 +5,13 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 
 const images = [
-  { src: "/Andrea.jpeg", alt: "Andrea - Espacio MAT" },
-  { src: "/FotoAle.jpeg", alt: "Alejandra - Espacio MAT" },
-  { src: "/Gabriela.jpeg", alt: "Gabriela - Espacio MAT" },
-  { src: "/Cuencos.jpeg", alt: "Cuencos Tibetanos" },
-  { src: "/clasessemanales.jpg", alt: "Clases Semanales" },
-  { src: "/CursoLiderazgo.jpg", alt: "Curso de Liderazgo" },
-  { src: "/ingreso.jpg", alt: "Espacio MAT" },
+  { src: "/Espacio1.jpeg", alt: "Espacio MAT - Foto 1" },
+  { src: "/Espacio2.jpeg", alt: "Espacio MAT - Foto 2" },
+  { src: "/Espacio3.jpeg", alt: "Espacio MAT - Foto 3" },
+  { src: "/Espacio4.jpeg", alt: "Espacio MAT - Foto 4" },
+  { src: "/Espacio5.jpeg", alt: "Espacio MAT - Foto 5" },
+  { src: "/espacio6.jpg", alt: "Espacio MAT - Foto 6" },
+  { src: "/espacio7.jpg", alt: "Espacio MAT - Foto 7" },
 ];
 
 export function Galeria() {
