@@ -54,7 +54,7 @@ export function Contacto() {
               onClick={handleWhatsAppClick}
               className="inline-flex items-center gap-3 px-10 py-5 bg-green-500 hover:bg-green-600 text-white text-lg rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              <MessageCircle className="w-7 h-7" />
+              <MessageCircle className="w-5 h-5" />
               Contactar por WhatsApp
             </button>
           </div>

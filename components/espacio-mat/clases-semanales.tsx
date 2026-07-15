@@ -34,15 +34,15 @@ export function ClasesSemanales() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="rounded-3xl overflow-hidden shadow-2xl bg-[#e8e0f0]">
               <Image
                 src="/clasessemanales.jpg"
                 alt="Clases Semanales"
-                fill
-                className="object-cover"
+                width={800}
+                height={600}
+                className="w-full h-auto"
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }}
               />
             </div>
           </motion.div>

@@ -23,7 +23,7 @@ const equipo = [
     nombre: "Estefania",
     rol: "Asistente y Redes Sociales",
     descripcion: "",
-    foto: null,
+    foto: "/FotoEstefi.jpg",
     objectPosition: "center top",
   },
   {

@@ -64,14 +64,14 @@ export function CursosTalleres() {
                 className="bg-background rounded-3xl overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 {/* Image */}
-                <div className="relative h-48 w-full overflow-hidden rounded-t-3xl">
+                <div className="relative w-full overflow-hidden rounded-t-3xl">
                   <Image
                     src={curso.image}
                     alt={curso.title}
-                    fill
-                    className="object-cover hover:scale-105 transition-transform duration-300"
+                    width={600}
+                    height={600}
+                    className="w-full h-auto hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    style={{ objectFit: 'cover' }}
                   />
                   {/* Icon overlay */}
                   <div className={`absolute top-4 right-4 w-12 h-12 rounded-xl bg-${curso.color}/90 backdrop-blur-sm flex items-center justify-center`}>
