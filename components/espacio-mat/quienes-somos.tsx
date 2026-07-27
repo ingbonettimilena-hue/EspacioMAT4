@@ -13,10 +13,10 @@ const equipo = [
     objectPosition: "center 15%",
   },
   {
-    nombre: "Agñes Landi",
+    nombre: "Agnes Landi",
     rol: "Coordinadora general de Espacio MAT",
     descripcion: "Profesora de Educación física, Instructora de Yoga.",
-    foto: "/agnes.jpg",
+    foto: "/fotoagnes.jpeg",
     objectPosition: "center top",
   },
   {
@@ -30,21 +30,21 @@ const equipo = [
     nombre: "Marian Rossi",
     rol: "Profe de yoga y Masajes Ayurvédicos",
     descripcion: "",
-    foto: null,
+    foto: "/fotomarian.jpeg",
     objectPosition: "center top",
   },
   {
     nombre: "Vale Chiosoni",
     rol: "Profe de meditación",
     descripcion: "",
-    foto: null,
+    foto: "/fotovale.jpeg",
     objectPosition: "center top",
   },
   {
     nombre: "Julieta",
     rol: "Nutricionista Holística",
     descripcion: "",
-    foto: null,
+    foto: "/fotojulieta.jpeg",
     objectPosition: "center top",
   },
 ];

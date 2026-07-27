@@ -8,7 +8,7 @@ const servicios = [
   {
     title: "Psicoterapia Gestáltica",
     description:
-      "Sesiones individuales de psicoterapia gestáltica enfocadas en el aquí y ahora, la toma de consciencia y la integración emocional.",
+      "Sesiones de psicoterapia gestáltica en modalidad individual, de pareja, familiar y grupal, enfocadas en el aquí y ahora. Toma de conciencia, integración emocional y desarrollo de vínculos saludables.",
     color: "mat-purple",
   },
   {
