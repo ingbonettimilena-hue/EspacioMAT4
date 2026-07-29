@@ -16,7 +16,7 @@ const equipo = [
     nombre: "Agnes Landi",
     rol: "Coordinadora general de Espacio MAT",
     descripcion: "Profesora de Educación física, Instructora de Yoga.",
-    foto: "/fotoagnes.jpeg",
+    foto: "/Fotoagnes.jpeg",
     objectPosition: "center top",
   },
   {
