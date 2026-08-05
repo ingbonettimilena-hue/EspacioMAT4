@@ -1321,7 +1321,12 @@ Salida
     justify-content: space-between;
   }
 }
-
+.footervibo {
+  width: 100px;
+}
+.footer-copy a img{
+  width: 100px;
+}
 #cursor {
     position: fixed;
     left: 0;
